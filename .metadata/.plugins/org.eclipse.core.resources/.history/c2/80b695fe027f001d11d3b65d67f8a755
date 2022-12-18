@@ -1,0 +1,9 @@
+package com.cursoemvideo.heranca;
+
+public class HerancaMain {
+
+	public static void main(String[] args) {
+
+	}
+
+}

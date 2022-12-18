@@ -1,0 +1,9 @@
+package com.cursoemvideo.aula09;
+
+public class Aula09 {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa("Danilo Rodrigues de Oliveira", "Masculino", 49);
+		p1.status();
+	}
+}

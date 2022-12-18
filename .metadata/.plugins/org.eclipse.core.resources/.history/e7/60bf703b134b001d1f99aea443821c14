@@ -1,0 +1,9 @@
+package com.cursoemvideo.aula09;
+
+public interface Publicacao {
+	public abstract void abrir(Pessoa p1);
+	public abstract void fechar();
+	public abstract void folhear();
+	public abstract void avancarPag();
+	public abstract void voltarPag();
+}

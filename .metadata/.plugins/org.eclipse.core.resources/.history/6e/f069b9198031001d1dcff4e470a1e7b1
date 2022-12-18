@@ -1,0 +1,12 @@
+package com.cursoemvideo.exercicio1;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		int s = Math.pow(8, 2);
+		System.out.println(s);
+		
+	}
+
+}

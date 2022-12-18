@@ -1,0 +1,52 @@
+package com.cursoemvideo.aula09;
+
+public class Pessoa {
+	// Atributos.
+	private String nome;
+	private String sexo;
+	private int idade;
+	
+	// Método construtor.
+	public Pessoa(String nome, String sexo, int idade) {
+		this.setNome(nome);
+		this.setSexo(sexo);
+		this.setIdade(idade);
+	}
+	// Métodos especiais Getters and Setters.
+	protected String getNome() {
+		return nome;
+	}
+	
+	protected void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	protected String getSexo() {
+		return sexo;
+	}
+	
+	protected void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+	
+	protected int getIdade() {
+		return idade;
+	}
+	
+	protected void setIdade(int idade) {
+		this.idade = idade;
+	}
+	
+	// Métodos.
+	public void fazerAniversário() {
+		this.setIdade(this.getIdade() + 1); 
+	}
+	
+	public void status() {
+		System.out.println("\n------------------ Dados Pessoais Abstratos ------------------\n");
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Sexo: " + this.getSexo());
+		System.out.println("Idade: " + this.getIdade());
+		System.out.println("\n--------------------------------------------------------------");
+	}
+}

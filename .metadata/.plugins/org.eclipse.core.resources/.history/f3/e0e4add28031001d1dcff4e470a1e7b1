@@ -1,0 +1,14 @@
+package com.cursoemvideo.exercicio1;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		
+		int x = 5, y = 2;
+		double z;
+		
+		z = x / y;
+		System.out.println(z);
+	}
+
+}

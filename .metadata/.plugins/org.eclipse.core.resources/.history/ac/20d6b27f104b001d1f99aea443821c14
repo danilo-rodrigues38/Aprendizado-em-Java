@@ -1,0 +1,115 @@
+package com.cursoemvideo.aula09;
+
+public class Livro implements Publicacao {
+	// Atributos.
+	private String titulo;
+	private String autor;
+	private int totPaginas;
+	private int pagAtual;
+	private boolean aberto;
+	private Pessoa leitor;
+	
+	// Método Construtor
+	public Livro() {
+		this.setTitulo(titulo);
+		this.setAutor(autor);
+		this.setTotPaginas(totPaginas);
+		this.setAberto(false);
+	}
+	
+	// Métodos especiais Getters and Setters.
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public int getTotPaginas() {
+		return totPaginas;
+	}
+	public void setTotPaginas(int totPaginas) {
+		this.totPaginas = totPaginas;
+	}
+	public int getPagAtual() {
+		return pagAtual;
+	}
+	public void setPagAtual(int pagAtual) {
+		this.pagAtual = pagAtual;
+	}
+	public boolean isAberto() {
+		return aberto;
+	}
+	public void setAberto(boolean aberto) {
+		this.aberto = aberto;
+	}
+	public Pessoa getLeitor() {
+		return leitor;
+	}
+	public void setLeitor(Pessoa leitor) {
+		this.leitor = leitor;
+	}
+	
+	// Métodos implementados de Publicacao.
+	@Override
+	public void abrir(Pessoa n1) {
+		if (this.isAberto()) {
+			System.out.println("O livro já esta aberto.");
+		} else {
+			this.setAberto(true);
+		}
+	}
+	@Override
+	public void fechar() {
+		if (this.isAberto()) {
+			this.setAberto(false);
+		} else {
+			System.out.println("O livro já esta fechado.");
+		}
+		this.setLeitor(null);
+	}
+	@Override
+	public void folhear() {
+		if (this.isAberto()) {
+			System.out.println("Folheando o livro...");
+		} else {
+		System.out.println("O livro esta fechado!");
+		System.out.println("Abrindo o livro...");
+		this.setAberto(true);
+		System.out.println("Agora estou folheando o livro...");
+		}
+	}
+	@Override
+	public void avancarPag() {
+		if (this.isAberto()) {
+			this.setPagAtual(getPagAtual() + 1);
+		} else {
+			System.out.println("O livro esta fechado.");
+		}
+	}
+	@Override
+	public void voltarPag() {
+		if (this.isAberto()) {
+			this.setPagAtual(getPagAtual() - 1);
+		} else {
+			System.out.println("O livro esta fechado.");
+		}
+	}
+	
+	// Métodos
+	public void detalhes() {
+		System.out.println("\n------ Detalhes do Livro ------\n");
+		System.out.println("Titulo: " + this.getTitulo());
+		System.out.println("Autor: " + this.getAutor());
+		System.out.println("Total de paginas: " + this.getTotPaginas());
+		System.out.println("Pagina autal: " + this.getPagAtual());
+		System.out.println("O livro esta aberto: " + this.isAberto());
+		System.out.println("Leitor: " + this.getLeitor());
+		System.out.println("\n-------------------------------\n");
+	}
+}

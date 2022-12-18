@@ -1,0 +1,13 @@
+package com.cursoemvideo.heranca;
+
+public class Bolsista extends Aluno {
+	private boolean bolsa;
+	// Métodos:
+	public void renovarBolsa() {
+		
+	}
+	
+	public void pagarMensalidade() {
+		
+	}
+}

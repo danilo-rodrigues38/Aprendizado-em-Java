@@ -1,0 +1,54 @@
+package com.cursoemvideo.exercicio1;
+
+import java.util.Arrays;
+
+public class Vetores {
+
+	public static void main(String[] args) {
+		/*
+		int n[] = new int[4];
+		n[0] = 3;
+		n[1] = 8;
+		n[2] = 5;
+		n[3] = 1;
+		System.out.println("\nTotal de casas do vetor N = " + n.length);
+		for(int c = 0; c < 4; c++) {
+			System.out.print(n[c] + " ");
+		}
+		
+		System.out.println("\n");
+		
+		int vet[] = {3, 2, 8, 7, 5, 4};
+		for(int cont = 0; cont < vet.length; cont++) {
+			System.out.print(vet[cont] + " ");
+		}
+				
+		String mes[] = {"Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"};
+		int tot[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+		for(int cont = 0; cont < mes.length; cont++) {
+			System.out.printf("\nNo mes de %s, temos %d dias.", mes[cont], tot[cont]);
+		}
+		
+		int num[] = {3, 5, 1, 8, 4};
+		int pos = Arrays.binarySearch(num, 1); // Faz uma busca no vetor a procura de um determinado valor.
+		System.out.println("\nEncontrei o valor 1 na posicao " + pos);
+		for(int val: num) { // Estrutura de repetição - "for it" - "Para cada elemento" - expecífico para vetores .
+			System.out.printf(val + " ");
+		}
+		
+		Arrays.sort(num);     // O "sort" coloca o vetor em ordem crescente.
+		int p = Arrays.binarySearch(num, 1);
+		System.out.println("\nEncontrei o valor 1 na posicao " + p);
+		for(int valor: num) { // Estrutura de repetição - "for it" - "Para cada elemento" - expecífico para vetores .
+			System.out.printf(valor + " ");
+		}
+		*/
+		int num[] = new int[50];
+		Arrays.fill(num, 0); // Preenche automáticamente o vetor com um valor pré-definido, neste caso o valor 0.
+		for(int v:num) {
+			System.out.print(v + " ");
+		}
+		
+	}
+
+}

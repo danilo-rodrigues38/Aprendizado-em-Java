@@ -1,0 +1,12 @@
+package com.cursoemvideo.heranca;
+
+public class HerancaMain {
+
+	public static void main(String[] args) {
+		Visitante v1 = new Visitante();
+		v1.setNome("Danilo");
+		v1.setSexo("Masculino");
+		v1.setIdade(49);
+	}
+
+}

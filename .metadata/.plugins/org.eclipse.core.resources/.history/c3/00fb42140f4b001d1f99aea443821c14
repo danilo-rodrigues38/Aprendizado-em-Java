@@ -1,0 +1,18 @@
+package com.cursoemvideo.aula09;
+
+public class Aula09 {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa("Danilo Rodrigues de Oliveira", "Masculino", 49);
+		// p1.status();
+		
+		Livro l1 = new Livro();
+		l1.setTitulo("Codigo Limpo - Habilidades Praticas do Agile Software");
+		l1.setAutor("Robert C. Mrtin");
+		l1.setTotPaginas(425);
+		
+		l1.abrir(p1);
+		l1.
+		l1.detalhes();
+	}
+}

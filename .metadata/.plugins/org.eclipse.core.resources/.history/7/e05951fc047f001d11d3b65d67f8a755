@@ -1,0 +1,16 @@
+package com.cursoemvideo.heranca;
+
+public class Aluno extends Pessoa {
+	private String curso;
+	private int matricula;
+	// Métodos:
+	public void pagarMensalidade() {
+		if (this.getSexo().equals("M") || this.getSexo().equals("Masculino")) {
+			System.out.println("O aluno" + this.getNome() + ", pagou a mensalidade.");
+		} else {
+			System.out.println("A aluna" + this.getNome() + ", pagou a mensalidade.");
+		}
+	}
+	// Métodos acessores Getters and Setters:
+	
+}
