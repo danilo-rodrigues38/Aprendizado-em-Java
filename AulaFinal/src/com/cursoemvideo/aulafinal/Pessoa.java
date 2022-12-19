@@ -19,10 +19,10 @@ public class Pessoa {
 		this.experiencia ++;
 	}
 	public void dadosPessoa() {
-		System.out.println("Nome: " + this.nome);
-		System.out.println("Idade: " + this.idade);
-		System.out.println("Sexo: " + this.sexo);
-		System.out.println("Experiencia: " + this.experiencia);
+		System.out.println("Nome: " + this.getNome());
+		System.out.println("Idade: " + this.getIdade());
+		System.out.println("Sexo: " + this.getSexo());
+		System.out.println("Experiencia: " + this.getExperiencia());
 	}
 	// Métodos acessores Getters and Setters:
 	public String getNome() {

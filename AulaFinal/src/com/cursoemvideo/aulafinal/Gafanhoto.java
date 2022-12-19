@@ -28,12 +28,8 @@ public class Gafanhoto extends Pessoa {
 		this.totAssistido = totAssistido;
 	}
 	public void dadosGafanhoto() {
-		System.out.println("\n------------------------------------");
-		System.out.println("          Dados do Usuario          ");
-		System.out.println("------------------------------------");
 		this.dadosPessoa();
-		System.out.println("Login: " + this.login);
-		System.out.println("Total Assistido: " + this.totAssistido);
-		System.out.println("--------- FIM DO RELATORIO ---------\n");
+		System.out.println("Login: " + this.getLogin());
+		System.out.println("Total Assistido: " + this.getTotAssistido());
 	}
 }

@@ -48,11 +48,13 @@ public class Video implements AcoesVideo{
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-	public int getAvaliação() {
+	public int getAvaliacao() {
 		return avaliacao;
 	}
-	public void setAvaliação(int avaliação) {
-		this.avaliacao = avaliação;
+	public void setAvaliacao(int avaliacao) {
+		int nova;
+		nova = (int) ((this.avaliacao + avaliacao) / this.views);
+		this.avaliacao = nova;
 	}
 	public int getViews() {
 		return views;
@@ -73,14 +75,10 @@ public class Video implements AcoesVideo{
 		this.reproduzindo = reproduzindo;
 	}
 	public void dadosVideo() {
-		System.out.println("\n------------------------------------");
-		System.out.println("           Dados do Filme           ");
-		System.out.println("------------------------------------");
-		System.out.println("Titulo: " + this.titulo);
-		System.out.println("Avaliacao: " + this.avaliacao);
-		System.out.println("Views: " + this.views);
-		System.out.println("Curtidas: " + this.curtidas);
-		System.out.println("Reproduzindo: " + this.reproduzindo);
-		System.out.println("--------- FIM DO RELATORIO ---------\n");
+		System.out.println("Titulo: " + this.getTitulo());
+		System.out.println("Avaliacao: " + this.getAvaliacao());
+		System.out.println("Views: " + this.getViews());
+		System.out.println("Curtidas: " + this.getCurtidas());
+		System.out.println("Reproduzindo: " + this.getReproduzindo());
 	}
 }
