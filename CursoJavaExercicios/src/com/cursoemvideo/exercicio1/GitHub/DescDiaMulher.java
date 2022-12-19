@@ -35,7 +35,7 @@ public class DescDiaMulher {
 			novoValor = (float) (valor * 0.95);
 			System.out.printf("\nO Sr %s vai pagar o valor de R$ %.2f ja incluso o desconto.", nome, novoValor);
 		}
-
+		teclado.close();
 	}
 
 }

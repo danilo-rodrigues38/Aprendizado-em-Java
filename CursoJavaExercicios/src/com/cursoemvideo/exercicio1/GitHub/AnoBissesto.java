@@ -22,6 +22,7 @@ public class AnoBissesto {
 		} else {
 			System.out.println("O ano digitado nao e BISSESTO!");
 		}
+		teclado.close();
 
 	}
 

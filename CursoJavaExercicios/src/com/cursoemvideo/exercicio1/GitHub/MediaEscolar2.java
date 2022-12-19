@@ -29,7 +29,7 @@ public class MediaEscolar2 {
 		} else {
 			System.out.println("\nVoce teve um aproveitamento regular, RECUPERACAO!");
 		}
-
+		teclado.close();
 	}
 
 }

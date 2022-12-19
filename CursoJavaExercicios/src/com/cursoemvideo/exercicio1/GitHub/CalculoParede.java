@@ -25,7 +25,7 @@ public class CalculoParede {
 		tinta = area / 2;
 		System.out.printf("\nA area total da parede e de %.2f."
 				+ "\nA quantidade necessaria de tinta para pintar a parede e de %.2f litros de tinta.", area, tinta);
-
+		teclado.close();
 	}
 
 }

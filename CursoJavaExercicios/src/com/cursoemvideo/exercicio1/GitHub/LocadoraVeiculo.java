@@ -29,6 +29,7 @@ public class LocadoraVeiculo {
 		System.out.printf("\nO total de Km percorrido foi de %d km, o valor por km e de R$ 0,20, o valor a ser pago e R$ %.2f.", km, vlkm);
 		System.out.printf("\nO total de dias com o veiculo foi de %d dias, o valor diario e de R$ 90,00, o valor a ser pago e R$ %.2f.", dias, vldia);
 		System.out.printf("\nO valor total a ser pago e de R$ %.2f.", total);
+		teclado.close();
 	}
 
 }

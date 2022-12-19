@@ -37,7 +37,7 @@ public class ReducaoVidaFumante {
 		}
 		System.out.printf("\nO total de dias perdidos em sua vida de fumante e de %d dias.", diasPerdidos);
 		System.out.printf("\nQue corresponde a %d anos, %d mes e %d dias perdidos da sua vida.", ano, mes, dia);
-
+		teclado.close();
 	}
 
 }

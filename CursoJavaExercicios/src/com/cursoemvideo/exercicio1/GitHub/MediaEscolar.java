@@ -25,6 +25,7 @@ public class MediaEscolar {
 		n2 = teclado.nextFloat();
 		media = (n1 + n2) / 2;
 		System.out.printf("\nA media entre %.1f e %.1f e igual a %.1f.", n1, n2, media);
+		teclado.close();
 	}
 
 }

@@ -22,6 +22,7 @@ public class BoaVindas {
 		nome = teclado.nextLine();
 		
 		System.out.printf("Ola, %s, e um prazer te conhecer!", nome);
+		teclado.close();
 	}
 
 }

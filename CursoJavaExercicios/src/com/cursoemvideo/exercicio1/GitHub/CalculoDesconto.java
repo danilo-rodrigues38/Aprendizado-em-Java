@@ -18,6 +18,7 @@ public class CalculoDesconto {
 		float valor = teclado.nextFloat();
 		double nvalor = valor - (valor * 0.05);
 		System.out.printf("O novo valor do produto com desconto e de R$ %.2f.", nvalor);
+		teclado.close();
 
 	}
 

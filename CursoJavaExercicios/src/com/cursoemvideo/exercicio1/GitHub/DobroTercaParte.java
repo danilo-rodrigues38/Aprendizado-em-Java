@@ -21,6 +21,7 @@ public class DobroTercaParte {
 		num = teclado.nextFloat();
 		System.out.printf("\nO dobro de %.1f e %.1f.", num, num * 2);
 		System.out.printf("\nA terca parte de %.1f e %.1f.", num, num / 3);
+		teclado.close();
 	}
 
 }

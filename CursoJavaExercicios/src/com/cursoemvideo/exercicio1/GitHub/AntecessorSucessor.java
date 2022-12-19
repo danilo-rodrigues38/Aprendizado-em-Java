@@ -20,6 +20,8 @@ public class AntecessorSucessor {
 		num = teclado.nextInt();
 		System.out.printf("\nO antecessor de %d e %d.", num, num - 1);
 		System.out.printf("\nO sucessor de %d e %d.", num, num + 1);
+		teclado.close();
 	}
+	
 
 }

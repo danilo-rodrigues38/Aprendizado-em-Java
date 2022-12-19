@@ -20,6 +20,7 @@ public class AumentoSalarial {
 		sal = teclado.nextFloat();
 		nsal = sal + (sal * 0.15);
 		System.out.printf("O novo salario do funcionario e de R$ %.2f.", nsal);
+		teclado.close();
 
 	}
 
