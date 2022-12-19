@@ -19,6 +19,7 @@ public class NomeSalario {
 		salario = teclado.nextFloat();
 		
 		System.out.printf("\nO funcionario, %s, tem um salario de R$ %.2f neste mes.", nome, salario);
+		teclado.close();
 	}
 
 }

@@ -31,6 +31,7 @@ public class CalculoDistâncias {
 		System.out.printf("%f dm\n", dist * 10);
 		System.out.printf("%f cm\n", dist * 100);
 		System.out.printf("%f mm\n", dist * 1000);
+		teclado.close();
 	}
 
 }

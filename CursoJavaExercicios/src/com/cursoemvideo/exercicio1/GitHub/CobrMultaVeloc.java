@@ -31,7 +31,7 @@ public class CobrMultaVeloc {
 			System.out.println("\nVoce e um bom motorista, respeita as leis de\n"
 					+ "transito, faca uma boa viagem.");
 		}
-
+		teclado.close();
 
 	}
 

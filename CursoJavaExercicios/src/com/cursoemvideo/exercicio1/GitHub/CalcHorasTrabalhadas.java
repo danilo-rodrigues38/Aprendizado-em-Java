@@ -21,6 +21,7 @@ public class CalcHorasTrabalhadas {
 		dias = teclado.nextInt();
 		salario = (dias * 8) * 25;
 		System.out.printf("\nO valor do salario que no funcionario\nvai receber e de R$ %.2f.", salario);
+		teclado.close();
 
 	}
 

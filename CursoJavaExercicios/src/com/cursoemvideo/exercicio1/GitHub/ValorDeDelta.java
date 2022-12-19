@@ -24,7 +24,7 @@ public class ValorDeDelta {
 		c = teclado.nextInt();
 		delta = (b * b) - (4 * a * c);
 		System.out.printf("O valor de DELTA e %d.", delta);
-
+		teclado.close();
 	}
 
 }

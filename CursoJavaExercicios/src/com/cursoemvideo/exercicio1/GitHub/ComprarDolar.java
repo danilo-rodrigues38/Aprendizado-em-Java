@@ -20,7 +20,7 @@ public class ComprarDolar {
 		float real = teclado.nextFloat();
 		float dollars = real / dollar;
 		System.out.printf("\nCom R$ %.2f, voce pode comprar US$ %.2f.", real, dollars);
-
+		teclado.close();
 	}
 
 }

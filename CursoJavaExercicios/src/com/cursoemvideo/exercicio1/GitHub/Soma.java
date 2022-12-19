@@ -25,6 +25,7 @@ public class Soma {
 		n2 = teclado.nextInt();
 		soma = n1 + n2;
 		System.out.printf("A soma entre %d e %d e igual a %d.", n1, n2, soma);
+		teclado.close();
 	}
 
 }

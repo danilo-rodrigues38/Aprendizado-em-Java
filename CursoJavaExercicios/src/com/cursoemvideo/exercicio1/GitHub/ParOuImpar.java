@@ -19,7 +19,7 @@ public class ParOuImpar {
 		} else {
 			System.out.println("\nO numero e IMPAR!");
 		}
-		
+		teclado.close();
 	}
 
 }

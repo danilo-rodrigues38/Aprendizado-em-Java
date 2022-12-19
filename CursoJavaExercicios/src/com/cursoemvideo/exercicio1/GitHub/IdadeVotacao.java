@@ -27,7 +27,7 @@ public class IdadeVotacao {
 		} else {
 			System.out.printf("\nVoce tem %d anos e para voce, o VOTO E OBRIGATORIO!", idade);
 		}
-		
+		teclado.close();
 	}
 
 }

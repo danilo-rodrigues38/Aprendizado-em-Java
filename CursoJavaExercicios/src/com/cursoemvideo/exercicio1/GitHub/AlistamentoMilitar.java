@@ -28,7 +28,7 @@ public class AlistamentoMilitar {
 		} else {
 			System.out.printf("\nVoce tem %d anos, ja se passaram %d anos do alistamento.", idade, idade - 18);
 		}
-		
+		teclado.close();
 	}
 
 }
